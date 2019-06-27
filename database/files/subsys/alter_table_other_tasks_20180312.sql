@@ -1,0 +1,1 @@
+ALTER TABLE `other_tasks` ADD `task_type_id` INT(11) NOT NULL AFTER `id`;

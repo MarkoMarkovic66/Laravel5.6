@@ -1,0 +1,1 @@
+ALTER TABLE `tasks` CHANGE `task_id` `cand_task_id` INT(11) NULL DEFAULT NULL COMMENT '候補課題ID';

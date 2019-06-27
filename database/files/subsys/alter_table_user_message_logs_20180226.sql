@@ -1,0 +1,1 @@
+ALTER TABLE `user_message_logs` CHANGE `post_type` `cw_post_type` INT(11) NOT NULL DEFAULT '0' COMMENT 'chatwork投稿タイプ（1: メッセージ、2: タスク）';

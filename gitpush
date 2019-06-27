@@ -1,0 +1,21 @@
+set -eu
+
+API_TOKEN="24c089e25031d00e1486c89065fb8df9"
+ROOM_ID="94124089"
+
+REPOS=$(basename $(pwd))
+REPOS=${REPOS%.*}
+
+#BRANCH=$(git rev-parse --symbolic --abbrev-ref $1)
+BRANCH=$(git rev-parse --abbrev-ref HEAD)
+MSG=$(git log -1 --pretty=format:"%h - %an : %s" $BRANCH)
+
+git push origin ${BRANCH}
+
+BODY="(${REPOS}) [${BRANCH}] ${MSG}"
+BODY="[info][title]PUSHED INTO ${BRANCH} BRANCH!!![/title]${BODY}[/info]"
+
+curl -X POST -H "X-ChatWorkToken: ${API_TOKEN}" -d "body=${BODY}" "https://api.chatwork.com/v2/rooms/${ROOM_ID}/messages" > /dev/null 2>&1
+
+exit 0
+

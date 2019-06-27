@@ -1,0 +1,3404 @@
+/***********************
+        common
+***********************/
+html {
+  height: 100%;
+  min-width: 1080px;
+}
+body {
+  width: 100%;
+  position: relative;
+  height: auto !important;
+  height: 100%;
+  min-height: 100%;
+  margin-top: 60px;
+  font-size: 14px;
+}
+.main{
+  padding-bottom: 60px;
+}
+.wrap {
+  display: flex;
+}
+.sidebar {
+  height: auto;
+  min-height: 1000px;
+  background: #323232;
+  min-width: 210px;
+  padding: 30px 15px;
+  color: #fff;
+  ul {
+    list-style:none;
+    padding: 0;
+  }
+}
+.mainbar {
+  width: 100%;
+  padding: 10px;
+}
+.sidebar-nav li {
+  padding: 5px;
+}
+.sidebar-nav li a {
+  color: #fff;
+  opacity: 0.7;
+}
+.sidebar-nav li a:hover {
+  opacity: 1.0;
+  text-decoration: none;
+}
+.sidebar-nav li a span {
+  margin-right: 10px;
+}
+.master-nav a {
+  padding-left: 15px;
+  font-size: 14px;
+}
+#active {
+  background: #494949;
+  border-radius: 5px;
+}
+#active a {
+  opacity: 1.0 !important;
+}
+
+.hero-box {
+  display: flex;
+}
+.primary-hero-box {
+  flex: 4;
+}
+.secondary-hero-box {
+  flex: 1;
+  margin-left: 10px;
+}
+
+
+/***********************
+        login
+***********************/
+.login-header {
+  background: #f2f1ed;
+  line-height: 45px;
+  height: 45px;
+}
+.login-main {
+  text-align: center;
+  padding: 100px 0;
+}
+.login-form {
+  width: 360px;
+  margin: 0 auto;
+  text-align: left;
+  margin-top: 40px;
+}
+.login-btn {
+  width: 100%;
+  border: 1px solid #555;
+  margin-top: 15px;
+  color: #000;
+}
+.login-btn:hover {
+  border: 1px solid transparent;
+  color: #fff;
+  background-color: #ad190c;
+}
+
+/***********************
+        header
+***********************/
+.header {
+  line-height: 60px;
+  height: 60px;
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+  background: #fff;
+  z-index: 200;
+}
+.header-items {
+  display: flex;
+  justify-content: space-between;
+}
+.title img {
+  height: 40px;
+  margin-top: -5px;
+}
+.logout-btn {
+  background: #f2f1ed;
+  color: #000;
+  margin-right: 10px;
+}
+.logout-btn:hover {
+  opacity: 0.8;
+}
+
+/***********************
+        footer
+***********************/
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  text-align: center;
+  background: #555;
+  line-height: 60px;
+  color: #fff;
+  font-size: 12px;
+}
+
+/***********************
+        index
+***********************/
+.primary-item {
+  padding: 10px;
+  width: 100%;
+  border: 1px solid #f2f1ed;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.hero-section {
+  margin-bottom: 10px;
+}
+.secondary-item {
+  padding: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  background: #555;
+  color: #fff;
+  margin-bottom: 10px;
+}
+.secondary-box {
+  height: auto;
+  width: 100%;
+  /* border: 1px solid #f2f1ed; */
+}
+.btn-hero {
+  background: #f2f1ed;
+  color: #000;
+}
+.btn-hero:hover {
+  opacity: 0.8;
+}
+
+/** dashboard */
+/**
+#task-list {
+  width: 100px;
+}
+**/
+
+table.top-task-list {
+    width: 80%;
+    border:1px solid gray;
+    & tr, th, td {
+        border:1px solid gray;
+    }
+    & th {
+        background-color: lightgray;
+        text-align: center;
+        font-weight: bold;
+    }
+    & th:nth-child(1) {
+        width:50px;
+    }
+    & th:nth-child(2) {
+        width:180px;
+    }
+    & th:nth-child(3) {
+        width:auto;
+
+    }
+    & th:nth-child(4) {
+        width:100px;
+    }
+    & th:nth-child(5) {
+        width:150px;
+    }
+
+    & td:nth-child(1),
+      td:nth-child(2),
+      td:nth-child(4),
+      td:nth-child(5),
+      td:nth-child(6) {
+        text-align: center;
+    }
+}
+
+table.top-answer-list {
+    width: 80%;
+    border:1px solid gray;
+    & tr, th, td {
+        border:1px solid gray;
+    }
+    & th {
+        background-color: lightgray;
+        text-align: center;
+        font-weight: bold;
+    }
+    & th:nth-child(1) {
+        width:50px;
+    }
+    & th:nth-child(2) {
+        width:180px;
+    }
+    & th:nth-child(3) {
+        width:150px;
+    }
+    & th:nth-child(4) {
+        width:auto;
+    }
+
+    & td:nth-child(1),
+      td:nth-child(2),
+      td:nth-child(3) {
+        text-align: center;
+    }
+    & td:nth-child(4) {
+      text-align: left;
+    }
+}
+
+table.top-member-list {
+    width: 80%;
+    border:1px solid gray;
+    & tr, th, td {
+        border:1px solid gray;
+    }
+    & th {
+        background-color: lightgray;
+        text-align: center;
+        font-weight: bold;
+    }
+    & th:nth-child(1) {
+        width:50px;
+    }
+    & th:nth-child(2),
+    & th:nth-child(3) {
+        width:150px;
+    }
+    & th:nth-child(4) {
+        width:350px;
+    }
+    & th:nth-child(5) {
+        width:auto;
+    }
+
+    & td:nth-child(1),
+      td:nth-child(2),
+      td:nth-child(3) {
+        text-align: center;
+    }
+    & td:nth-child(4),
+    & td:nth-child(5) {
+      text-align: left;
+    }
+}
+
+
+/***********************
+        hwork
+***********************/
+.search-box {
+  padding: 15px;
+}
+.search-box label {
+  margin-right: 10px;
+}
+.search-item {
+  & .form-group {
+      margin: 0;
+  }
+}
+.search-primary-box, .search-secondary-box, .search-button-box {
+  display: flex;
+  margin: 5px 0;
+}
+.search-button-box {
+  margin-top: 0px;
+  justify-content: center;
+}
+.search-button-box .btn {
+  width: 120px;
+  margin: 0 5px;
+}
+.btn-clear {
+  background: #eee;
+}
+.btn-search {
+  background: #ad190c;
+  color: #fff;
+}
+.btn-search:hover {
+  background: #000;
+  color: #fff;
+}
+.middle-item {
+  padding: 5px 15px;
+  margin-bottom: 10px;
+}
+.btn-chatwork {
+  margin-left: 30px;
+  background: #ad190c;
+  color: #fff;
+}
+.btn-chatwork:hover {
+  background: #000;
+  color: #fff;
+}
+
+.hwork-item-box {
+  display: flex;
+  margin: 10px 15px;
+}
+.hwork-content {
+  flex: 3;
+  margin-left: 10px;
+  padding: 10px;
+  border: 1px solid #eee;
+  display: flex;
+}
+.btn-domain {
+  background: #eee;
+  margin: 2px 5px;
+  color: #000;
+}
+.btn-domain:hover {
+  opacity: 0.8;
+}
+.new-post {
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #ad190c;
+  color: #ad190c;
+}
+
+.search-box {
+    & .search-secondary-box .dropdown {
+        width: 270px;
+        & span.select2-container {
+            width: 60%!important;
+        }
+    }
+}
+
+.guidance-message {
+    min-width: 300px;
+}
+
+.page {
+  text-align: center;
+}
+.pagination > li.page-no {
+    width: 36px;
+}
+.pagination>li>a, .pagination>li>span {
+  color: #000;
+}
+.pagination>li>a .current-page {
+  font-weight: bold;
+}
+.pagination > li.current-page > .page-link {
+  background-color: #ad190c;
+}
+.pagination > li.total-count-item {
+  position: relative;
+  display: block;
+  padding: .5rem .75rem;
+  margin-left: -1px;
+  line-height: 1.25;
+  color: #007bff;
+  background-color: #fff;
+  border: 1px solid #dee2e6;
+}
+
+
+.hero-form {
+  padding: 0px 10px;
+}
+.hero-form-item {
+  display: flex;
+  //padding: 5px 0;
+  margin-bottom: 10px;
+}
+.hero-form-item span {
+  width: 200px;
+  line-height: 34px;
+  font-weight: bold;
+}
+.hero-form-item input, .hero-form-item textarea {
+  width: 100%;
+  border: 1px solid #ced4da;
+}
+.modal-footer {
+  text-align: center;
+}
+.btn-register {
+  background: #ad190c;
+  color: #fff;
+  padding-right: 30px;
+  padding-left: 30px;
+}
+.btn-register:hover {
+  background: #000;
+  color: #fff;
+}
+.btn-clear {
+  background: #eee;
+  color: #000;
+  padding-right: 30px;
+  padding-left: 30px;
+}
+.btn-clear:hover {
+  opacity: 0.8;
+}
+
+/** 宿題管理画面スクロール設定 */
+.task-left-panel ,
+.task-left-panel-staff {
+  /*  width: 80%;
+    height: 800px; */
+  width: auto;
+  height: auto;
+  /** overflow: auto; */
+  padding: 0 15px;
+}
+
+/**
+.task-left-panel-scroll {
+    width: 100%;
+    height: 800px;
+    overflow: auto;
+}
+.task-left-panel-scroll {
+  width: auto;
+  overflow: auto;
+  padding: 0 15px;
+  height: auto;
+}
+**/
+
+.task-list-wrapper {
+  position: relative;
+  height: 560px;
+  overflow-x:auto;
+  overflow-y:scroll;
+}
+
+/***
+.task-right-panel-scroll {
+    width: 100%;
+    // height: 800px;
+    overflow: auto;
+    & div.draggable {
+        // width: 188px;
+        & div {
+            display: inline-block;
+            width: 165px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+    }
+}
+.draggable-active {
+  border: 4px solid orange;
+  background-color: white;
+}
+.droppable-active {
+  border: 4px solid orange;
+}
+***/
+
+/** 宿題一覧 */
+.task-left-panel table.task-list tr {
+    & th, td {
+      vertical-align: middle;
+      white-space: nowrap;
+      text-align: center;
+    }
+    td:nth-child(2) {
+      text-align: left;
+    }
+    td:nth-child(7) {
+      width: 150px;
+    }
+
+/***
+    & th {
+        white-space: nowrap;
+    }
+
+    & th,
+      td:nth-child(1),
+      td:nth-child(3),
+      td:nth-child(4),
+      td:nth-child(5),
+      td:nth-child(6),
+      td:nth-child(7),
+      td:nth-child(8),
+      td:nth-child(9) {
+      text-align: center;
+    }
+    & td:nth-child(2) {
+        white-space: nowrap;
+    }
+    & td:nth-child(3) {
+        max-width: 100px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    *********/
+
+    & td button.btn {
+        border-color: lightgray;
+    }
+    & td button.btn:disabled {
+        background-color: lightgray;
+        color: white;
+    }
+    & td button.task-status-btn {
+        width: 85px;
+        height: 50px;
+        font-size: 11px;
+        white-space: normal;
+    }
+    & td span.select2-container {
+        max-width: 150px;
+    }
+}
+
+.task-left-panel-staff table.task-list tr {
+    & th, td {
+      vertical-align: middle;
+      white-space: nowrap;
+      text-align: center;
+    }
+
+/****
+    & th,
+      td:nth-child(3),
+      td:nth-child(4),
+      td:nth-child(5),
+      td:nth-child(6),
+      td:nth-child(7) {
+      text-align: center;
+    }
+    & td:nth-child(1) {
+        white-space: nowrap;
+    }
+    & td:nth-child(2) {
+        max-width: 400px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+****/
+}
+
+
+
+/** Chatwork一括投稿のスクロール設定 */
+.task-panel-scroll {
+    width: 100%;
+    height: 500px;
+    overflow: auto;
+    margin-bottom: 20px;
+}
+
+
+/***********************
+      hwork / cw
+***********************/
+.overall {
+  width: 100%;
+  padding: 10px;
+  padding-bottom: 60px;
+}
+.overall-box {
+  padding-bottom: 15px;
+}
+.overall .hero-form {
+  border-bottom: 1px solid #eee;
+  margin: 15px 10px;
+  padding-bottom: 15px;
+}
+.hero-form-footer {
+  text-align: center;
+}
+.voice-box {
+  background: #eee;
+  width: 100%;
+  text-align: center;
+  line-height: 32px;
+  height: 32px;
+  border-radius: 5px;
+}
+.modal-btn-voice-dl {
+  width: 100%;
+  /* background-color: #e9ecef; */
+  border-color: lightgray;
+}
+.modal-btn-voice-dl:disabled {
+  background-color: gray;
+}
+
+
+/***********************
+        member
+***********************/
+.mm-id, .mm-item, .mm-calendar, .mm-post, .mm-counselor {
+  margin: 2.5px 5px;
+  height: 32px;
+  line-height: 32px;
+}
+.mm-top-col {
+  width: 120px;
+  background: #eee;
+  text-align: center;
+}
+.mm-col {
+  width: 120px;
+  border: 1px solid #eee;
+}
+.mm-calendar a {
+  color: #000;
+}
+
+.panel-scroll {
+    width: 100%;
+    height: 633px;
+    overflow: auto;
+    margin-bottom: 10px;
+}
+
+div.detail-info-box {
+    width: 30%;
+    height: 50px;
+    overflow: auto;
+    & table td:nth-child(1){
+        width: 30%;
+    }
+    & table td input {
+        height: 22px;
+        width: 95%;
+    }
+}
+
+.search-cond-item {
+    display: flex;
+    margin-right: 30px;
+    margin-bottom: 10px;
+    & input {
+        width:200px;
+    }
+}
+/** 会員一覧 */
+.member-list {
+    /**
+    & tr:nth-child(odd) > td {
+       background-color: ghostwhite;
+    }
+    & tr:nth-child(even) > td {
+       background-color: floralwhite;
+    }
+    & tr:hover > td {
+       background-color: wheat;
+    }
+    */
+    & tr {
+        & th {
+          white-space: nowrap;
+          text-align: center;
+          font-weight: bold;
+        }
+        & th, td {
+          vertical-align: middle;
+        }
+        & td {
+          height: 50px;
+          text-align: center;
+        }
+        & td:nth-child(8) {
+            width: 330px;
+            text-align: left;
+        }
+    }
+}
+
+div#chatworkPostModal {
+    & .modal-body {
+        & .hero-form .hero-form-item div {
+            padding: 5px 0;
+            position:relative;
+            left: -43px;
+        }
+
+    }
+}
+
+div#counselorModal {
+    & .modal-body {
+        & div.counselor-list {
+            width: 100%;
+            height: 200px;
+            overflow: auto;
+            margin-bottom: 10px;
+        }
+        & div.counselor-asign {
+            width: 100%;
+            & .counselor-asign-item {
+                margin:0 auto;
+                width: 80%;
+                & div {
+                    margin-left: 40px;
+                }
+            }
+        }
+        & div.counselor-candidate-list {
+            display: inline-flex;
+            & span.select2-container {
+                width: 100%;
+            }
+        }
+        & div.counselor-add {
+            display: inline-flex;
+        }
+        & table.counselor-table {
+            margin:0 auto;
+            width:100%;
+            border: 1px solid lightgray;
+            & tr, th, td {
+                border: 1px solid lightgray;
+            }
+            & tr.row-deleted, tr.row-deleted td {
+                background-color: gray;
+            }
+            & th {
+                text-align: center;
+                background-color: lightgray;
+            }
+            & th:nth-child(1) {
+                width: 450px;
+            }
+            & th:nth-child(2) {
+                width: 150px;
+            }
+            & td.counselor-name {
+                width: 520px;
+            }
+            & td.counselor-op {
+                width: 150px;
+                text-align: center;
+            }
+        }
+    }
+}
+
+div#taskDetailModal {
+    & div.modal-body{
+        & input {
+        }
+    }
+}
+
+/** 会員詳細 */
+/** output履歴 */
+div.ouput-history {
+    & table {
+        & tr {
+            & td:nth-child(1) {
+            }
+            & td:nth-child(2) {
+                width: 85px;
+            }
+            & td:nth-child(3) {
+                width: 160px;
+            }
+            & td:nth-child(4) {
+                width: 100px;
+            }
+            & td:nth-child(5) {
+                width: 100px;
+            }
+            & td:nth-child(6) {
+                width: auto;
+            }
+        }
+    }
+}
+/** レッスン受講履歴 */
+div.lesson-history {
+    & table {
+        & tr {
+            & td:nth-child(1) {
+            }
+            & td:nth-child(2) {
+                width: 130px;
+            }
+            & td:nth-child(3) {
+                width: 130px;
+            }
+            & td:nth-child(4) {
+                width: 100px;
+            }
+            & td:nth-child(5) {
+                width: 100px;
+            }
+            & td:nth-child(6) {
+                width: auto;
+            }
+        }
+    }
+}
+
+/** メッセージ送受信履歴 */
+div.message-log-box {
+    table {
+        tr {
+            td:nth-child(1) {
+            }
+            td:nth-child(2) {
+                width: 60px;
+            }
+            td:nth-child(3) {
+                width: 80px;
+            }
+            td:nth-child(4) {
+                width: 100px;
+            }
+            td:nth-child(5) {
+                width: 100px;
+            }
+            td:nth-child(6) {
+                width: auto;
+            }
+        }
+    }
+}
+
+
+
+/** 会員詳細 ajaxによる部分データ取得時の処理中表示(背景) */
+.member-detail-data-onloading-row {
+    background-color: whitesmoke;
+}
+/** 会員詳細 ajaxによる部分データ取得時の処理中表示(アイコン) */
+span.member-detail-data-onloading-icon {
+  position: relative;
+  display: inline-block;
+  margin-top: -4px;
+  width: 80px;
+  height: 8px;
+  border: 1px solid #5f6568;
+  overflow: hidden;
+  border-radius: 5px;
+  background-repeat: repeat-x;
+  background-size: 16px 100%;
+  background-image: -webkit-gradient(linear, left bottom, right top, from(#5f6568), color-stop(0.3, #5f6568), color-stop(0.31, transparent), to(transparent) ),
+  -webkit-gradient(linear, left bottom, right top, from(transparent), color-stop(0.69, transparent), color-stop(0.7, #5f6568), to(#5f6568) );
+  background-image: -webkit-linear-gradient(20deg,#5f6568 4.8px,transparent 0),-webkit-linear-gradient(200deg,#5f6568 4.8px,transparent 0);
+  background-image: linear-gradient(70deg,#5f6568 4.8px,transparent 0),linear-gradient(250deg,#5f6568 4.8px,transparent 0);
+  vertical-align: middle;
+  -webkit-animation: animation22 2s linear infinite;
+  animation: animation22 2s linear infinite;
+}
+@-webkit-keyframes animation22 {
+  0% {
+    background-position: 0, 0;
+  }
+  100% {
+    background-position: 100%, 100%;
+  }
+}
+@keyframes animation22 {
+  0% {
+    background-position: 0, 0;
+  }
+  100% {
+    background-position: 100%, 100%;
+  }
+}
+/** 会員詳細 ajaxによる部分データ取得時の全件数表示 */
+.part-data-total-count {
+    margin-left: 20px;
+    font-size: 14px;
+}
+
+
+/***********************
+    member/cal 出題カレンダー
+***********************/
+.back-btn {
+  margin-bottom: 10px;
+}
+.calendar {
+  display: flex;
+
+  & .btn-no-detail-data {
+    background-color: lightgray!important;
+    color: white!important;
+  }
+}
+
+
+.cal-row-head-item {
+  height: auto;
+  line-height: 32px;
+  margin: 5px;
+  width: 60px;
+}
+
+.cal-item {
+  height: auto;
+  line-height: 32px;
+  margin: 5px 5px 20px 5px;
+  flex: 1;
+}
+.day-item {
+  background: #999;
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+}
+.text-title-item {
+  text-align: right;
+  font-weight: bold;
+}
+.text-item {
+  text-align: center;
+}
+.add-item {
+  text-align: center;
+  background: #eee;
+  border: 1px solid #999;
+  cursor: pointer;
+}
+.cal-g-box {
+  display: flex;
+}
+.cal-g-id {
+  text-align: right;
+  font-weight: bold;
+  line-height: 38px;
+}
+.cal-g-text {
+  border: 1px solid #eee;
+  width: 80%;
+}
+.cal-g-item {
+  margin: 2.5px 5px;
+}
+.c-master-modal-top, .c-master-modal-search {
+  margin: 10px 0;
+  display: flex;
+}
+.c-master-modal-category {
+  margin: 5px;
+  border: 1px solid #eee;
+  height: 32px;
+  line-height: 32px;
+  flex: 1;
+  text-align: center;
+}
+.c-master-modal-input {
+  margin-right: 5px;
+  flex: 4;
+  padding-top: 10px;
+}
+.c-master-modal-search {
+  margin-left: 5px;
+  flex: 1;
+}
+.c-master-modal-search .btn {
+  width: 100%;
+}
+.c-master-modal-top-col {
+  background: #eee;
+  margin: 2.5px 5px;
+  text-align: center;
+  flex:1;
+  height: 32px;
+  line-height: 32px;
+}
+.ns-c-master-modal-top-col, .c-master-modal-top-btn {
+  flex: 1;
+  margin-top: 2.5px;
+}
+.c-master-modal-top-item {
+  flex: 1;
+  border: 1px solid #eee;
+  margin: 2.5px 5px;
+  height: 32px;
+  line-height: 32px;
+}
+.btn-c-master {
+  background: #eee;
+}
+.btn-rid {
+  background: #eee;
+  margin-left: 10px;
+}
+
+/** 未使用
+.counselor-asign, .counselor-add {
+  width: 50%;
+}
+.counselor-asign .dropdown-menu, .counselor-asign .dropdown-toggle, .counselor-add .btn {
+  width: 100%;
+}
+**/
+
+.chatwork-info {
+  border: 1px solid #eee;
+  width: 80%;
+}
+
+/** 出題カレンダー：タスクタイプ選択 */
+.select-task-type {
+    width: 100px;
+}
+.question-detail {
+    & .question-text {
+        padding: 5px 0;
+    }
+}
+
+/** 出題予定リストスクロール設定 */
+.task-list-scroll {
+    width: 100%;
+    height: 360px;
+    overflow: auto;
+}
+
+/** G/V 出題予定モーダル */
+.task-assign-table {
+    border: 1px solid lightgray;
+    & tr th, tr td {
+        border: 1px solid lightgray;
+    }
+    & tr th {
+        background-color: gray;
+        color: white;
+        text-align: center;
+        white-space: nowrap;
+    }
+    & tr td.td-center {
+        text-align: center;
+    }
+    & tr td.td-pad5 {
+        padding: 0 5px;
+    }
+
+    /** 予備問題と切り替えプルダウン */
+    select.select-reserve-task {
+        width: 140px;
+    }
+    /** マスタから切り替えボタン */
+    button.btn-mst-change-task {
+        font-size: 13px;
+        width: 116px;
+        margin: 5px 0;
+    }
+    button.btn-mst-change-task:hover {
+      opacity: 0.8;
+    }
+}
+
+/** タスク切り替えモーダル */
+.modal-change-task {
+    z-index: 9000;
+}
+/** マスタから切り替えモーダル */
+.modal-change-task-master {
+    z-index: 9001;
+}
+
+div.c-master-modal-search {
+    & div.c-master-modal-input {
+        & input {
+            width: 100px;
+        }
+        & label, input {
+            display: inline-block;
+        }
+    }
+}
+
+/** マスタ検索結果スクロール設定 */
+.c-master-modal-search-result-scroll {
+    width: 100%;
+    height: 360px;
+    overflow: auto;
+}
+.c-master-modal-search-result {
+    & .modal-guidance-message {
+        margin:10px 0;
+    }
+    & table tr {
+        & td:nth-child(6) {
+            text-align: left!important;
+        }
+    }
+}
+
+
+/***********************
+        master
+***********************/
+.hwork-item {
+  //padding-top: 10px;
+}
+.hwork-top-item-box {
+  display: flex;
+  padding: 0px 10px;
+}
+.hwork-top-item {
+  width: 180px;
+  text-align: center;
+  margin: 2.5px;
+  background: #eee;
+  height: 32px;
+  line-height: 32px;
+}
+.master-item {
+  width: 180px;
+  text-align: center;
+  margin: 2.5px;
+  border: 1px solid #eee;
+  height: 32px;
+  line-height: 32px;
+}
+.hwork-master-item-id {
+  width: 80px !important;
+}
+.master-item-edit, .master-item-delete {
+  margin: 0 5px;
+}
+.master-item-edit .btn-domain, .master-item-delete .btn-domain {
+  width: 100%;
+}
+.master-middle {
+  text-align: right;
+  margin-bottom: -50px;
+}
+.master-middle .btn-domain {
+  padding-right: 30px;
+  padding-left: 30px;
+}
+.first-name {
+  width: 320px !important;
+  margin-right: 20px;
+}
+.last-name {
+  width: 320px !important;
+}
+.batch-middle {
+  display: flex;
+}
+.batch-middle-item {
+  background: #eee;
+  width: 30%;
+  margin: 10px;
+  padding: 15px;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+}
+.hero-list li {
+  line-height: 32px;
+  margin-left: 10px;
+}
+.hero-list-all {
+  text-align: right;
+  margin: 10px;
+}
+
+/** メッセージ管理 */
+.table-user-message-logs {
+    thead tr {
+        th {
+            text-align:center;
+        }
+        th:nth-child(2) {
+            min-width: 60px;
+        }
+        th:nth-child(3) {
+            min-width: 80px;
+        }
+        th:nth-child(4),
+        th:nth-child(5) {
+            min-width: 80px;
+        }
+        th:nth-child(6) {
+            min-width: 90px;
+        }
+        th:nth-child(7) {
+            min-width: 70px;
+        }
+        th:nth-child(8),
+        th:nth-child(9) {
+            min-width: 90px;
+        }
+        th:nth-child(10),
+        th:nth-child(11) {
+            min-width: 95px;
+        }
+        th:nth-child(12) {
+            min-width: 120px;
+        }
+        th:nth-child(13) {
+            min-width: 90px;
+        }
+        th:nth-child(14) {
+            min-width: 90px;
+        }
+
+    }
+
+}
+
+.batch-log-table {
+    th {
+        white-space: nowrap;
+    }
+    th:nth-child(2){
+        width: 12%;
+    }
+    th:nth-child(3){
+        width: 15%;
+    }
+    th:nth-child(4),
+    th:nth-child(5),
+    th:nth-child(6) {
+        width: 9%;
+    }
+    th:nth-child(7) {
+        width: auto;
+    }
+}
+
+/** バッチ管理 モーダル */
+.batch-modal {
+  text-align: center;
+  padding: 45px 0;
+}
+.batch-modal {
+    p {
+      margin-bottom: 30px;
+    }
+    & button {
+      width: 114px;
+      margin: 0 auto;
+    }
+    & .batch-modal-caption {
+        width: 500px;
+        height: 100px;
+        margin: 0 auto;
+    }
+    & .batch-modal-caption ul {
+        list-style:none;
+        text-align: left!important;
+        padding-left: 100px!important;
+    }
+}
+
+
+.cal-item .btn {
+  width: 100%;
+  height: 100%;
+}
+
+.detail-hero {
+  padding: 0 10px;
+}
+.detail-primary-nav {
+  display: flex;
+  justify-content: space-between;
+}
+.detail-secondary-nav a {
+  text-decoration: none;
+}
+
+.detail-primary-info {
+  display: flex;
+  justify-content: flex-start;
+}
+.detail-user-basic,
+.detail-learning-policy {
+  width: 540px;
+    & .detail-info-box {
+      height: 140px;
+      width: 100%;
+      border: none;
+      & table {
+          width: 100%;
+          height: auto;
+          table-layout: fixed;
+          word-break: break-word;
+          word-wrap: break-word;
+          tr th {
+              text-align: center;
+          }
+          tr th:nth-child(1) {
+              width:100px;
+          }
+          tr th:nth-child(2) {
+              width:150px;
+          }
+          tr th:nth-child(3) {
+              width:auto;
+          }
+          tr th:nth-child(4) {
+              width:100px;
+          }
+          tr td {
+              text-align: left;
+          }
+          tr td:nth-child(1) {
+              width:100px;
+          }
+          tr td:nth-child(2) {
+              width:150px;
+          }
+          tr td:nth-child(3) {
+              width:auto;
+          }
+          tr td:nth-child(4) {
+              width:100px;
+          }
+      }
+    }
+}
+.detail-history-box {
+    padding: 1px!important;
+    margin-bottom: 30px;
+    max-height: 250px;
+    width: 100%;
+    overflow: auto;
+    & table {
+        width: 98%;
+        height: 100%;
+        table-layout: fixed;
+        word-break: break-word;
+        word-wrap: break-word;
+        tr {
+            th {
+                text-align: center;
+            }
+            th:nth-child(1) {
+                width: 35px;
+            }
+            th:nth-child(2) {
+                width:70px;
+            }
+            th:nth-child(3),
+            th:nth-child(4),
+            th:nth-child(5) {
+                width:100px;
+            }
+            th:nth-child(6) {
+                width:200px;
+            }
+            th:nth-child(7) {
+                width:100px;
+            }
+        }
+    }
+}
+
+.detail-task-box {
+    padding: 1px!important;
+    max-height: 250px;
+    width: 100%;
+    overflow: auto;
+    & table {
+        width: 98%;
+        max-height: 100%;
+    }
+}
+
+.detail-goal-info {
+  width: 100%;
+    & .detail-goal-box {
+      padding: 1px!important;
+      height: 130px;
+      width: 100%;
+      /* overflow: auto; */
+      border: none;
+        & table {
+            width: 100%;
+            height: 100%;
+            tr {
+                td:nth-child(1) {
+                    width:80px
+                }
+            }
+        }
+    }
+}
+
+.message-log-box {
+    padding: 1px!important;
+    max-height: 250px;
+    width: 100%;
+    overflow: auto;
+    & table {
+        width: 98%;
+        max-height: 100%;
+    }
+}
+
+
+.detail-box h3 {
+  font-size: 18px;
+  height: 32px;
+  font-weight: bold;
+  line-height: 32px;
+}
+.detail-info-box {
+  height: 150px;
+  width: 360px;
+  border: 1px solid #000;
+  padding: 10px;
+}
+.detail-info-box li {
+  line-height: 32px;
+}
+.detail-update-history-box {
+  width: 440px;
+}
+.basic-table {
+  border: 1px solid #000;
+  width: 100%;
+  line-height: 29px;
+  border-collapse: collapse;
+}
+.basic-table th, .message-table th {
+  padding: 5px;
+  border: solid 1px #000;
+  background: #555;
+  color: #fff;
+}
+.basic-table td, .message-table td, .master-table td {
+  padding: 3px 5px;
+  border: solid 1px #000;
+}
+.basic-table-btn {
+  border: solid 1px #fff !important;
+  background: #fff !important;
+}
+.basic-table-btn .btn {
+  width: 100%;
+}
+.detail-box {
+  margin: 15px 0 30px 0;
+  font-size: 12px;
+}
+.detail-goal-box {
+  height: 200px;
+  width: 100%;
+  border: 1px solid #000;
+}
+.number-col {
+  width: 30px;
+}
+.message-table {
+  border: 1px solid #000;
+  width: 100%;
+  border-collapse: collapse;
+}
+.master-table {
+  width: 100%;
+  font-size: 12px;
+}
+.master-table th {
+  padding: 5px;
+  border: solid 1px #000;
+}
+.master-table-primary {
+  background: #E06B26;
+  color: #fff;
+}
+
+.master-table-primary-item {
+  background: #fefae6;
+}
+
+.master-table-secondary {
+  background: #3BB74E;
+  color: #fff;
+}
+.master-table-secondary-item {
+  background: #dde4e6;
+}
+.master-table td {
+  width: 11%;
+  text-align: center;
+}
+.master-blank {
+  background: #eee;
+}
+.master-logic-footer {
+  margin: 30px;
+  text-align: center;
+}
+.master-logic-footer .btn {
+  margin: 10px;
+}
+.btn-release {
+  background: #eee;
+}
+.hwork-content .dropdown {
+  margin: 0 10px;
+}
+.hwork-voice, .hwork-feedback {
+  line-height: 60px;
+}
+.hwork-detail-modal-btn {
+  color: #000;
+  cursor: pointer;
+}
+.hwork-detail-modal-btn:hover {
+  text-decoration: none;
+  color: #000;
+}
+.hero-form-separate {
+  display: flex;
+}
+.hero-form-separate .hero-form-item {
+  width: 50%;
+}
+.hero-form-second-item {
+  padding-left: 15px;
+}
+.memberdetail-middle {
+  display: flex;
+  margin: 15px;
+}
+.member-detail-search {
+  margin-left: 10px;
+}
+.secondary-item a {
+  color: #fff;
+  text-decoration: underline;
+}
+.new-policy-section .hero-form-item input,
+.new-policy-section .hero-form-item textarea,
+.new-policy-section .hero-form-item button,
+.new-policy-section .hero-form-item .dropdown-menu {
+  width: 500px !important;
+}
+.hero-form-item .caret {
+  width: auto;
+}
+.detail-history-item .hwork-top-item,
+.detail-history-item .master-item {
+  width: 125px;
+}
+.btn-cal {
+  background: #eee;
+  margin-top: 5px;
+  height: 36px !important;
+}
+.calendar-form-item span {
+  width: 30px;
+}
+.calendar-form-item .form-control {
+  width: 800px;
+}
+.middle-list-section {
+  display: flex;
+  justify-content: space-between;
+}
+.problem-form-item {
+  display: flex;
+  margin: 15px 0;
+}
+.problem-form-item .btn-domain {
+  margin: 0;
+}
+.problem-form-item span {
+  line-height: 34px;
+  margin-right: 10px;
+}
+.problem-form-item .form-control,
+.problem-form-item .dropdown {
+  margin-right: 10px;
+}
+.detail-section {
+  padding: 0 10px;
+}
+.reload:hover {
+  color: #ff9554;
+}
+
+/***********************
+    batch management
+***********************/
+div.batch-log-list-scroll {
+    width: 100%;
+    height: 700px;
+    overflow: auto;
+    margin-bottom: 10px;
+}
+
+table.batch-status-list {
+    width: 100%;
+    border:1px solid gray;
+    & tr, th, td {
+        border:1px solid gray;
+    }
+    & th {
+        background-color: lightgray;
+        text-align: center;
+    }
+    & th:nth-child(1) {
+        width:50px;
+    }
+    & th:nth-child(2) {
+        width:180px;
+    }
+    & th:nth-child(3) {
+        width:300px;
+    }
+    & th:nth-child(4),
+      th:nth-child(5),
+      th:nth-child(6) {
+        width:100px;
+    }
+    & th:nth-child(7) {
+        width:auto;
+    }
+
+    & td:nth-child(1),
+      td:nth-child(2),
+      td:nth-child(4),
+      td:nth-child(5),
+      td:nth-child(6) {
+        text-align: center;
+    }
+}
+
+/***********************
+        others
+***********************/
+.onLoadingIcon {
+    position: fixed;
+    top: 45%;
+    left: 47%;
+    background: url("/images/loading_100_100.gif") no-repeat;
+    width: 100px;
+    height: 100px;
+    z-index: 20000;
+}
+#maskWholeDisplay {
+    position : absolute;
+    top : -100px;
+    left : 0px;
+    right : 0px;
+    bottom : 0px;
+    background-color : silver;
+    opacity : 0.5;
+    z-index: 20000;
+}
+.btn {
+  font-size: 14px;
+}
+.form-control {
+  font-size: 14px;
+}
+
+/***********************
+       core-table
+***********************/
+.core-tbl th, .core-tbl td {
+  padding: 0.5em;
+  border-right: 1px solid #eee;
+}
+.core-tbl tr th:first-child,
+.core-tbl tr td:first-child {
+  width: 30px;
+  text-align: center;
+}
+.core-tbl tr th:last-child,
+.core-tbl tr td:last-child {
+  border-right: none;
+}
+.core-tbl .btn-domain {
+  background: #ad190c !important;
+  color: #fff !important;
+  opacity: 1.0 !important;
+}
+#first-tbl {
+  width: auto;
+}
+
+/***********************
+      search-item
+***********************/
+.hero {
+  display: flex;
+}
+.time-input {
+  height: 28px;
+  border-radius: 5px !important;
+}
+.input-group-addon {
+  line-height: 28px;
+  padding: 0 10px;
+}
+.search-item .dropdown {
+  // width: 295px;
+}
+.dropdown select {
+  float: left;
+}
+.search-line {
+  margin-bottom: 15px;
+}
+.search-button-box {
+  margin-bottom: 30px;
+}
+.select2-container .select2-selection--single {
+  height: 35px;
+}
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+  height: 33px;
+}
+.select2-container--default .select2-selection--single {
+  border: 1px solid #ced4da;
+}
+.btn-answer {
+  color: #000;
+}
+.btn-table {
+  background: #ad190c;
+  color: #fff;
+}
+
+/* 宿題管理画面の修正 */
+.search-line label {
+  padding-right: 10px;
+}
+
+/** 会員レポート関連 */
+/* 会員詳細：レポート号数選択 */
+.member-report-issue-select {
+    width: 160px;
+    display: inline-block;
+    .select2-container {
+        width: 100%!important;
+    }
+}
+
+/* 会員レポート・ヘッダ*/
+.member-report-header {
+    display:flex;
+}
+.header-operate {
+    button {
+        margin-right: 20px;
+    }
+}
+.member-report-title {
+    font-size: 26px;
+}
+.member-report-icon {
+    width: 100px;
+    height: 20px;
+    margin-bottom: 5px;
+}
+.member-report-overview {
+    font-size:16px;
+}
+
+/* 会員レポート・ボディ*/
+.report-top-title {
+    font-size: 16px;
+}
+.report-top-title-issue {
+    font-size: 16px;
+    position: absolute;
+    right: 30px;
+}
+
+/** 会員レポート画面レイアウト */
+/** 会員基本情報 */
+.member-info-box {
+    width: 100%;
+    padding: 5px;
+
+    table {
+        width: 100%;
+    }
+    table tr, th, td {
+        border: 1px solid lightgray;
+        padding: 5px;
+        font-size:16px;
+    }
+    table tr {
+        page-break-inside: avoid;
+    }
+    table th {
+        width: 15%;
+        font-weight: bold;
+        background-color: whitesmoke;
+    }
+    table td {
+        width: auto;
+    }
+}
+
+/**
+ * 2018-08-04
+ * 最新版 会員レポート web/PDF レイアウト
+ */
+.pdf-overall {
+width: 100%;
+padding: 10px 10px 5px 10px;
+}
+/** グラフ表示Box */
+.member-report-box-pdf_20180804 {
+    width: 100%;
+
+    .report-block {
+        width: 100%;
+        height: auto;
+        margin-top: 20px;
+        margin-bottom: 60px;
+
+        .report-block-title {
+            font-size: 18px;
+            font-weight: bold;
+            color: #ad190c;
+        }
+        .report-block-title-line {
+            margin-top: -8px;
+            .line1 {
+                display: inline-block;
+                width:300px;
+                height: 5px;
+                background-color: #ad190c;
+            }
+            .line2 {
+                display: inline-block;
+                width:300px;
+                height: 5px;
+                background-color: black;
+            }
+        }
+        .report-block-header {
+            font-size: 16px;
+            font-weight: bold;
+            padding-left: 20px;
+        }
+
+        .report-block-chart-box {
+            width: 96%;
+            height: auto;
+            min-height: 100px;
+            margin: 0 auto;
+
+            .report-block-chart-wrapper {
+                width: auto;
+                height: auto;
+                min-height: 50px;
+                margin: 0 auto;
+                display: flex;
+                justify-content: center;
+                align-items: top;
+            }
+            .report-block-chart-image-forecast {
+                width: auto;
+                height: auto;
+                .chart-image {
+                    min-width: 600px;
+                    min-height: 50px;
+                    .chart-image-title {
+                        width: 100%;
+                        height: 30px;
+                        text-align:center;
+                        font-size: 16px;
+                        font-weight: bold;
+                        color: #ad190c;
+                    }
+                    .msg { padding:20px 0; text-align:center; }
+                    img { width: 1000px; height: 500px; }
+                }
+            }
+            .report-block-chart-image-double {
+                width: auto;
+                height: auto;
+                min-height: 30px;
+                .chart-image {
+                    .chart-image-title {
+                        width: 100%;
+                        height: 30px;
+                        text-align:center;
+                        font-size: 16px;
+                        font-weight: bold;
+                        color: #ad190c;
+                    }
+                    min-width: 400px;
+                    min-height: 130px;
+                    .msg { padding:20px 0; text-align:center; }
+                    img { width: 400px; height: 300px; }
+                }
+            }
+            .report-block-chart-image-space {
+                width: 80px;
+                height: auto;
+            }
+
+            /** ブロック05 文法パイチャート */
+            .report-block05-chart-image-pie {
+                width: 50%;
+                height: auto;
+                min-height: 30px;
+                padding-left: 80px;
+                .chart-image {
+                    .chart-image-title {
+                        width: 100%;
+                        height: 30px;
+                        text-align:center;
+                        font-size: 16px;
+                        font-weight: bold;
+                        color: #ad190c;
+                    }
+                    min-width: 400px;
+                    min-height: 130px;
+                    .msg { padding:20px 0; text-align:center; }
+                    img { width: 400px; height: 320px; }
+                }
+            }
+            /** ブロック05 文法Rateテーブル */
+            .report-block05-grammar-rate-table {
+                width: 50%;
+                height: auto;
+
+                .chart-image {
+                    .chart-image-title {
+                        width: 100%;
+                        height: 30px;
+                        text-align:center;
+                        font-size: 16px;
+                        font-weight: bold;
+                        color: #ad190c;
+                    }
+                    .msg { padding:20px 0; text-align:center; }
+
+                    /** 文法Rate表 */
+                    .grammar-rate-table-wrapper {
+                        width: 88%;
+                        height: auto;
+                        padding: 50px 0 0 0;
+                        font-size: 12px;
+
+                        .grammar-rate-table {
+                            box-sizing: border-box;
+                            width: 100%;
+                            height: auto;
+                            margin: 10px 0;
+                            font-size: 12px;
+
+                            .grammar-rate-table-row-top {
+                                box-sizing: border-box;
+                                display: table;
+                                width: 100%;
+                                table-layout: fixed;
+                            }
+                            .grammar-rate-table-row {
+                                box-sizing: border-box;
+                                display: table;
+                                width: 100%;
+                                table-layout: fixed;
+                                border-left: 1px solid lightgray;
+                            }
+                            .grammar-rate-table-row-last {
+                                box-sizing: border-box;
+                                display: table;
+                                width: 100%;
+                                table-layout: fixed;
+                                border-left: 1px solid lightgray;
+                                border-bottom: 1px solid lightgray;
+                            }
+                            .row-head-top {
+                                box-sizing: border-box;
+                                display: table-cell;
+                                width: 25%;
+                                font-weight: bold;
+                                text-align: center;
+                                background-color: white;
+                                border-top: none;
+                                border-left: none;
+                                border-right: 1px solid lightgray;
+                            }
+                            .row-head {
+                                box-sizing: border-box;
+                                display: table-cell;
+                                width: 25%;
+                                font-weight: bold;
+                                text-align: center;
+                                background-color: silver;
+                                border-top: 1px solid lightgray;
+                                border-right: 1px solid lightgray;
+                            }
+                            .cell-head {
+                                box-sizing: border-box;
+                                display: table-cell;
+                                width: 25%;
+                                font-weight: bold;
+                                text-align: left;
+                                padding-left: 10px;
+                                background-color: khaki;
+                                border-top: 1px solid lightgray;
+                                border-right: 1px solid lightgray;
+                            }
+                            .cell-data {
+                                box-sizing: border-box;
+                                display: table-cell;
+                                width: 25%;
+                                font-weight: normal;
+                                text-align: right;
+                                padding-right: 10px;
+                                border-top: 1px solid lightgray;
+                                border-right: 1px solid lightgray;
+                            }
+                        }/** grammar-rate-table-pdf */
+
+                        .member-chart-rate-table-ps {
+                            margin-top: -8px;
+                            margin-left: 200px;
+                        }
+                    }/** member-chart-rate-table */
+                }/** chart-image */
+            }/** report-block05-grammar-rate-table */
+
+            /** 予測グラフの凡例コメント */
+            .chart-image-forecast-remark {
+                width: 50%;
+                height: auto;
+                min-height: 100px;
+                margin: 0 auto;
+                padding: 10px;
+                border: 2px dotted gray;
+                .remark01 { color:green; }
+                .remark02 { color:green; opacity: 0.7; }
+                .remark03 { color:black; }
+                .remark04 { color:red; }
+                .remark05 { color:blue; }
+            }
+
+            /** 単語クラウドグラフのコメント */
+            .report-block04-chart-remark {
+                width: auto;
+                height: auto;
+                padding: 10px;
+                margin-left: 30px;
+                text-align: center;
+                border: 2px dotted gray;
+            }
+
+            .member-g-sample-box {
+                width: 90%;
+                height: auto;
+                margin: 10px 0;
+                /* border: 1px solid lightgray; */
+
+                .member-g-sample-title {
+                    width: 100%;
+                    height: 30px;
+                    border-bottom: 1px solid lightgray;
+                    font-size: 16px;
+                    font-weight: bold;
+                    padding-left: 10px;
+                }
+                .member-g-sample-data {
+                    width: 100%;
+                    height: auto;
+                    padding: 10px;
+
+                    table {
+                        border-collapse: collapse;
+                        border-spacing: 0;
+                        tr {
+                            width: 95%;
+                        }
+                        tr, th, td {
+                            border: 1px solid lightgray;
+                        }
+                        tr:nth-child(odd) {
+                            background-color: seashell;
+                        }
+                        tr:nth-child(even) {
+                            background-color: honeydew;
+                        }
+                        tr:hover {
+                            background-color: wheat;
+                        }
+
+                        th {
+                            background-color: silver;
+                            text-align: center;
+                        }
+                        th:nth-child(1) {
+                            width: 40px;
+                        }
+                        th:nth-child(2) {
+                            width: 80px;
+                        }
+                        th:nth-child(3) {
+                            width: 90px;
+                        }
+                        th:nth-child(4) {
+                            width: 120px;
+                        }
+                        th:nth-child(5) {
+                            width: 50px;
+                        }
+                        th:nth-child(6) {
+                            width: auto;
+                        }
+
+                        td:nth-child(1),
+                        td:nth-child(2),
+                        td:nth-child(3),
+                        td:nth-child(4),
+                        td:nth-child(5) {
+                            text-align: center;
+                        }
+                        td:nth-child(6) {
+                            text-align: left;
+                            padding-left: 5px;
+                        }
+                    }
+                }
+            }/** member-g-sample-box */
+
+            .member-lesson-ticket-box {
+                width: 90%;
+                height: auto;
+                margin: 10px 0;
+                /* border: 1px solid lightgray; */
+
+                .member-lesson-ticket-title {
+                    width: 100%;
+                    height: 30px;
+                    border-bottom: 1px solid lightgray;
+                    font-size: 16px;
+                    font-weight: bold;
+                    padding-left: 10px;
+                }
+                .member-lesson-ticket-data {
+                    width: 100%;
+                    height: auto;
+                    padding: 10px;
+
+                    table {
+                        border-collapse: collapse;
+                        border-spacing: 0;
+                        tr {
+                            width: 95%;
+                        }
+                        tr, th, td {
+                            border: 1px solid lightgray;
+                        }
+                        tr:nth-child(odd) {
+                            background-color: seashell;
+                        }
+                        tr:nth-child(even) {
+                            background-color: honeydew;
+                        }
+                        tr:hover {
+                            background-color: wheat;
+                        }
+
+                        th {
+                            background-color: silver;
+                            text-align: center;
+                        }
+                        th:nth-child(1) {
+                            width: 40px;
+                        }
+                        th:nth-child(2) {
+                            width: 160px;
+                        }
+                        th:nth-child(3) {
+                            width: 120px;
+                        }
+                        th:nth-child(4) {
+                            width: 150px;
+                        }
+                        th:nth-child(5) {
+                            width: 110px;
+                        }
+                        th:nth-child(6) {
+                            width: 150px;
+                        }
+                        th:nth-child(7) {
+                            width: 110px;
+                        }
+
+                        td {
+                            text-align: center;
+                        }
+                    }
+                }
+            }/** member-lesson-ticket-box */
+
+            .member-task-progress-box {
+                width: 90%;
+                height: auto;
+                margin: 10px 0;
+                /* border: 1px solid lightgray; */
+
+                .member-task-progress-title {
+                    width: 100%;
+                    height: 30px;
+                    border-bottom: 1px solid lightgray;
+                    font-size: 16px;
+                    font-weight: bold;
+                    padding-left: 10px;
+                }
+                .member-task-progress-data {
+                    width: 100%;
+                    height: auto;
+                    padding: 10px;
+
+                    table {
+                        border-collapse: collapse;
+                        border-spacing: 0;
+                        tr {
+                            width: 95%;
+                        }
+                        tr, th, td {
+                            border: 1px solid lightgray;
+                        }
+                        tr:nth-child(odd) {
+                            background-color: seashell;
+                        }
+                        tr:nth-child(even) {
+                            background-color: honeydew;
+                        }
+                        tr:hover {
+                            background-color: wheat;
+                        }
+
+                        th {
+                            background-color: silver;
+                            text-align: center;
+                        }
+                        th:nth-child(1) {
+                            width: 40px;
+                        }
+                        th:nth-child(2) {
+                            width: 160px;
+                        }
+                        th:nth-child(3) {
+                            width: 200px;;
+                        }
+                        th:nth-child(4) {
+                            width: 150px;
+                        }
+                        th:nth-child(5) {
+                            width: 150px;
+                        }
+                        th:nth-child(6) {
+                            width: 120px;
+                        }
+
+                        td {
+                            text-align: center;
+                        }
+                        td.arrign-left {
+                            padding-left: 10px;
+                            text-align: left;
+                        }
+                    }
+                }
+            }/** member-task-progress-box */
+
+        }/** /report-block-chart-box */
+    }/** /report-block */
+
+    /** ブロック間スペース */
+    .report-block-space {
+        width: 10px;
+        height: 60px;
+    }
+}
+
+
+
+/**
+ * @deprecated 2018-08-04
+ * 会員レポート (旧)レイアウト
+ */
+.member-report-box-deprecated {
+    width: 100%;
+
+    .member-chart-box {
+        width: 100%;
+        margin: 10px auto;
+        border: 1px solid lightgray;
+
+        .member-chart-box-title {
+            width: 100%;
+            height: 30px;
+            border-bottom: 1px solid lightgray;
+            padding: 2px 0 0 5px;
+            font-size: 16px;
+            font-weight: bold;
+            color: white;
+            background-color: darkred;
+        }
+        .member-chart-box-caption {
+            width: 95%;
+            margin-left:30px;
+            font-size: 14px;
+            font-weight: normal;
+            color: black;
+        }
+        /** 第1グループのグラフ */
+        .member-chart-wrap-layer-1 {
+            width: 100%;
+            height: auto;
+            margin: 10px auto;
+            clear: both;
+
+            .member-yosoku-chart {
+                width: 100%;
+                margin: 0 auto;
+
+                .member-chart-arrange {
+                    display: flex;
+
+                    /** 予測グラフ画像 */
+                    .member-chart-group0 {
+                        width: 1000px;
+                        height: auto;
+                        margin: 0 auto;
+                        border: 1px solid lightgray;
+
+                        .member-chart-group0-title {
+                            width: 100%;
+                            height: 30px;
+                            border-bottom: 1px solid lightgray;
+                            padding: 5px;
+                            font-size: 14px;
+                            font-weight: normal;
+                            background-color: #E6B8AF;
+                            text-align: center;
+                        }
+                        .member-chart-group0-caption {
+                            width: 95%;
+                            margin-left:30px;
+                            font-size: 14px;
+                            font-weight: normal;
+                            color: black;
+                            text-align: left;
+                        }
+                        .member-chart-group0-caption-top,
+                        .member-chart-group0-caption-bottom {
+                            width: 95%;
+                            margin-left:30px;
+                            font-size: 12px;
+                            font-weight: normal;
+                            color: black;
+                            text-align: left;
+                        }
+                        .member-chart-group0-image {
+                            width: 100%;
+                            min-width: 600px;
+                            height: auto;
+                            margin-top: 0px;
+                            .image-wrapper {
+                                width: 800px;
+                                margin: 0 auto;
+                                display: flex;
+                                img {
+                                    width: 800px;
+                                    height: auto;
+                                    display: block;
+                                    margin: 0 auto;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            /** ヒストグラム・グラフ画像 */
+            .member-histgram-chart {
+                width: 1000px;
+                margin: 0 auto;
+
+                .member-histgram-chart-arrange {
+                    display: flex;
+
+                    .member-chart-group1 {
+                        width: 49%;
+                        height: auto;
+                        margin-right: 0px;
+                        border: 1px solid lightgray;
+
+                        .member-chart-group1-title {
+                            width: 100%;
+                            height: 30px;
+                            border-bottom: 1px solid lightgray;
+                            padding: 5px;
+                            font-size: 14px;
+                            font-weight: normal;
+                            background-color: #E6B8AF;
+                            text-align: center;
+                        }
+                        .member-chart-group1-image {
+                            width: 100%;
+                            height: auto;
+                            margin-top: 0px;
+                            img {
+                                width: 360px;
+                                height: auto;
+                                margin: 20px 30px;
+                            }
+                        }
+                        .member-chart-group1-remark {
+                            width: 100%;
+                            height: auto;
+                            padding: 5px;
+                            font-size: 12px;
+                            font-weight: normal;
+                        }
+                    }/** .member-chart-group1 */
+                    .member-histgram-chart-mid {
+                        width: 52px;
+                        height: 10px;
+                    }
+                }/** .member-chart-arrange */
+
+            }/** .member-histgram-chart */
+
+        }/** .member-chart-wrap-layer-1 */
+
+        /** 第2グループのグラフ画像 */
+        .member-chart-wrap-2 {
+            width: 97%;
+            height: auto;
+            border: 1px solid lightgray;
+            margin: 10px auto;
+            clear: both;
+
+            .member-chart-wrap-layer-1 {
+                width: 100%;
+                height: auto;
+                margin: 10px auto;
+                clear: both;
+            }
+
+            /** 統計グラフ */
+            .member-chart-statistics {
+                width: 1000px;
+                margin: 0 auto;
+                margin-bottom: 10px;
+
+                .member-stat-chart-arrange {
+                    width: 100%;
+                    margin: 0 auto;
+                    display: flex;
+
+                    .member-chart-stat-sheet {
+                        width: 49%;
+                        height: auto;
+                        margin-right: 0px;
+                        border: 1px solid lightgray;
+                        /*
+                        width: 50%;
+                        height: auto;
+                        border: 1px solid lightgray;*/
+
+                        .member-chart-stat-sheet-title {
+                            width: 100%;
+                            height: 30px;
+                            border-bottom: 1px solid lightgray;
+                            padding: 5px;
+                            font-size: 14px;
+                            font-weight: normal;
+                            background-color: #E6B8AF;
+                            text-align: center;
+                        }
+                        .member-chart-stat-sheet-image {
+                            width: 100%;
+                            height: auto;
+                            margin: 10px auto;
+                            img {
+                                width: 400px;
+                                height: 300px;
+                                display: block;
+                                margin: 0 auto;
+                            }
+                        }
+                    }
+                    .member-stat-chart-mid {
+                        width: 52px;
+                        height: 10px;
+                    }
+
+                }
+            }
+
+            .member-chart-wrap-title {
+                width: 100%;
+                height: 30px;
+                border-bottom: 1px solid lightgray;
+                padding: 2px 0 0 5px;
+                background-color: #E6B8AF;
+                font-size: 16px;
+                font-weight: normal;
+                color: black;
+            }
+            .member-chart-wrap-caption {
+                width: 95%;
+                margin-left:30px;
+                font-size: 14px;
+                font-weight: normal;
+                color: black;
+            }
+
+            .member-chart-wrap-layer-2 {
+                width: 100%;
+                height: auto;
+                margin: 10px auto;
+                clear: both;
+            }
+
+            /** 単語解析グラフ */
+            .member-chart-words {
+                width: 1000px;
+                margin: 0 auto;
+                margin-bottom: 10px;
+
+                .member-words-chart-arrange {
+                    width: 100%;
+                    margin: 0 auto;
+                    display: flex;
+
+                    .member-chart-words-sheet {
+                        width: 49%;
+                        height: auto;
+                        margin-right: 0px;
+                        border: 1px solid lightgray;
+
+                        .member-chart-words-sheet-title {
+                            width: 100%;
+                            height: 30px;
+                            border-bottom: 1px solid lightgray;
+                            padding: 5px;
+                            font-size: 14px;
+                            font-weight: normal;
+                            background-color: #E6B8AF;
+                            text-align: center;
+                        }
+                        .member-chart-words-sheet-image {
+                            width: 100%;
+                            height: auto;
+                            margin: 10px auto;
+                            min-height: 230px;
+                            img {
+                                width: 400px;
+                                height: 300px;
+                                display: block;
+                                margin: 0 auto;
+                            }
+                        }
+                    }
+                    .member-chart-words-sheet-mid {
+                        width: 52px;
+                        height: 10px;
+                        padding-left: 14px;
+                        padding-top: 140px;
+                    }
+                }
+            }
+
+            .member-chart-arrange {
+                display: flex;
+
+                /** 第2グループのグラフ画像 */
+                .member-chart {
+                    width: 418px;
+                    height: auto;
+                    margin: 10px 0;
+                    border: 1px solid lightgray;
+                    .member-chart-title {
+                        width: 100%;
+                        height: 30px;
+                        border-bottom: 1px solid lightgray;
+                        padding: 5px;
+                        background-color: #E6B8AF;
+                        font-size: 14px;
+                        font-weight: normal;
+                        text-align: center;
+                    }
+                    .member-chart-image {
+                        width: 100%;
+                        height: auto;
+                        img {
+                            width: 88%;
+                            height: auto;
+                            margin: 5px 0 5px 20px;
+                        }
+                    }
+                }
+                .member-chart-mid {
+                    width: auto;
+                    height: auto;
+                    padding: 160px 23px 0 30px;
+                    .mark-triangle-right {
+                        width: auto;
+                    }
+                }
+
+                /** 第3グループのグラフ画像 */
+                .member-chart-wide {
+                    width: 95%;
+                    margin: 10px 0 10px 30px;
+                    border: 1px solid lightgray;
+                    .member-chart-wide-title {
+                        width: 100%;
+                        height: 30px;
+                        border-bottom: 1px solid lightgray;
+                        padding: 5px;
+                        background-color: #E6B8AF;
+                        text-align: center;
+                        font-size: 14px;
+                        font-weight: normal;
+                        color: black;
+                    }
+
+                    .member-chart-inner-arrange {
+                        display: flex;
+                        .member-chart-image {
+                            width: 40%;
+                            height: auto;
+                            img.member-chart-img05 {
+                                width: 380px;
+                                height: auto;
+                                margin: 10px 0 10px 20px;
+                            }
+                        }
+                        .member-chart-rate-table {
+                            width: 55%;
+                            height: auto;
+                            padding: 60px 0 0 50px;
+                            font-size: 14px;
+
+                            .grammar-rate-table {
+                                box-sizing: border-box;
+                                width: 100%;
+                                height: auto;
+                                margin: 10px 0;
+                                font-size: 14px;
+
+                                .grammar-rate-table-row-top {
+                                    box-sizing: border-box;
+                                    display: table;
+                                    width: 100%;
+                                    table-layout: fixed;
+                                }
+                                .grammar-rate-table-row {
+                                    box-sizing: border-box;
+                                    display: table;
+                                    width: 100%;
+                                    table-layout: fixed;
+                                    border-left: 1px solid lightgray;
+                                }
+                                .grammar-rate-table-row-last {
+                                    box-sizing: border-box;
+                                    display: table;
+                                    width: 100%;
+                                    table-layout: fixed;
+                                    border-left: 1px solid lightgray;
+                                    border-bottom: 1px solid lightgray;
+                                }
+                                .row-head-top {
+                                    box-sizing: border-box;
+                                    display: table-cell;
+                                    width: 25%;
+                                    font-weight: bold;
+                                    text-align: center;
+                                    background-color: white;
+                                    border-top: none;
+                                    border-left: none;
+                                    border-right: 1px solid lightgray;
+                                }
+                                .row-head {
+                                    box-sizing: border-box;
+                                    display: table-cell;
+                                    width: 25%;
+                                    font-weight: bold;
+                                    text-align: center;
+                                    background-color: silver;
+                                    border-top: 1px solid lightgray;
+                                    border-right: 1px solid lightgray;
+                                }
+                                .cell-head {
+                                    box-sizing: border-box;
+                                    display: table-cell;
+                                    width: 25%;
+                                    font-weight: bold;
+                                    text-align: left;
+                                    padding-left: 10px;
+                                    background-color: khaki;
+                                    border-top: 1px solid lightgray;
+                                    border-right: 1px solid lightgray;
+                                }
+                                .cell-data {
+                                    box-sizing: border-box;
+                                    display: table-cell;
+                                    width: 25%;
+                                    font-weight: normal;
+                                    text-align: right;
+                                    padding-right: 10px;
+                                    border-top: 1px solid lightgray;
+                                    border-right: 1px solid lightgray;
+                                }
+                            }/** .grammar-rate-table */
+
+                            .member-chart-rate-table-ps {
+                                margin-top: -8px;
+                                margin-left: 250px;
+                            }
+
+                        }/** .member-chart-rate-table */
+
+                    }/** .member-chart-inner-arrange */
+                }/** .member-chart-wide */
+
+            }/** .member-chart-arrange */
+        }/** .member-chart-wrap-2 */
+
+    }/** .member-chart-box */
+
+    .member-g-sample-box {
+        width: 99%;
+        height: auto;
+        margin: 10px auto;
+        border: 1px solid lightgray;
+
+        .member-g-sample-title {
+            width: 100%;
+            height: 30px;
+            border-bottom: 1px solid lightgray;
+            font-size: 16px;
+            font-weight: bold;
+            padding-left: 10px;
+        }
+        .member-g-sample-data {
+            width: 100%;
+            height: auto;
+            padding: 10px;
+
+            table {
+                border-collapse: collapse;
+                border-spacing: 0;
+                tr {
+                    width: 95%;
+                }
+                tr, th, td {
+                    border: 1px solid lightgray;
+                }
+                tr:nth-child(odd) {
+            	    background-color: seashell;
+                }
+                tr:nth-child(even) {
+            	    background-color: honeydew;
+                }
+
+                th {
+                    background-color: silver;
+                    text-align: center;
+                }
+                th:nth-child(1) {
+                    width: 40px;
+                }
+                th:nth-child(2) {
+                    width: 80px;
+                }
+                th:nth-child(3) {
+                    width: 90px;
+                }
+                th:nth-child(4) {
+                    width: 120px;
+                }
+                th:nth-child(5) {
+                    width: 50px;
+                }
+                th:nth-child(6) {
+                    width: auto;
+                }
+
+                td:nth-child(1),
+                td:nth-child(2),
+                td:nth-child(3),
+                td:nth-child(4),
+                td:nth-child(5) {
+                    text-align: center;
+                }
+                td:nth-child(6) {
+                    text-align: left;
+                    padding-left: 5px;
+                }
+            }
+        }
+    }
+
+    .member-lesson-ticket-box {
+        width: 99%;
+        height: auto;
+        margin: 10px auto;
+        border: 1px solid lightgray;
+
+        .member-lesson-ticket-title {
+            width: 100%;
+            height: 30px;
+            border-bottom: 1px solid lightgray;
+            font-size: 16px;
+            font-weight: bold;
+            padding-left: 10px;
+        }
+        .member-lesson-ticket-data {
+            width: 100%;
+            height: auto;
+            padding: 10px;
+
+            table {
+                border-collapse: collapse;
+                border-spacing: 0;
+                tr {
+                    width: 95%;
+                }
+                tr, th, td {
+                    border: 1px solid lightgray;
+                }
+                tr:nth-child(odd) {
+            	    background-color: seashell;
+                }
+                tr:nth-child(even) {
+            	    background-color: honeydew;
+                }
+
+                th {
+                    background-color: silver;
+                    text-align: center;
+                }
+                th:nth-child(1) {
+                    width: 40px;
+                }
+                th:nth-child(2) {
+                    width: 160px;
+                }
+                th:nth-child(3) {
+                    width: 92px;
+                }
+                th:nth-child(4) {
+                    width: 100px;
+                }
+                th:nth-child(5) {
+                    width: 100px;
+                }
+                th:nth-child(6) {
+                    width: 100px;
+                }
+                th:nth-child(7) {
+                    width: 100px;
+                }
+
+                td {
+                    text-align: center;
+                }
+            }
+        }
+    }
+    .member-task-progress-box {
+        width: 99%;
+        height: auto;
+        margin: 10px auto;
+        border: 1px solid lightgray;
+
+        .member-task-progress-title {
+            width: 100%;
+            height: 30px;
+            border-bottom: 1px solid lightgray;
+            font-size: 16px;
+            font-weight: bold;
+            padding-left: 10px;
+        }
+        .member-task-progress-data {
+            width: 100%;
+            height: auto;
+            padding: 10px;
+
+            table {
+                border-collapse: collapse;
+                border-spacing: 0;
+                tr {
+                    width: 95%;
+                }
+                tr, th, td {
+                    border: 1px solid lightgray;
+                }
+                tr:nth-child(odd) {
+            	    background-color: seashell;
+                }
+                tr:nth-child(even) {
+            	    background-color: honeydew;
+                }
+
+                th {
+                    background-color: silver;
+                    text-align: center;
+                }
+                th:nth-child(1) {
+                    width: 40px;
+                }
+                th:nth-child(2) {
+                    width: 160px;
+                }
+                th:nth-child(3) {
+                    width: 200px;
+                }
+                th:nth-child(4) {
+                    width: 100px;
+                }
+                th:nth-child(5) {
+                    width: 100px;
+                }
+                th:nth-child(6) {
+                    width: 100px;
+                }
+
+                td {
+                    text-align: center;
+                }
+                td:nth-child(3) {
+                    padding-left: 10px;
+                    text-align: left;
+                }
+            }
+        }
+    }
+}
+
+/**
+ * @deprecated 2018-08-04
+ * 会員レポートPDF レイアウト
+ */
+.pdf-overall-deprecated {
+width: 100%;
+padding: 10px 10px 5px 10px;
+}
+.pdf-footer-deprecated {
+  width: 100%;
+  height: 30px;
+  text-align: center;
+  background: #555;
+  line-height: 30px;
+  color: #fff;
+  font-size: 12px;
+}
+/** グラフ表示Box */
+.member-report-box-pdf-deprecated {
+    width: 100%;
+
+    div.page {
+        page-break-after: always;
+        page-break-inside: avoid;
+    }
+
+    /** 1件のグラフ・ブロック */
+    .member-chart-box-pdf {
+        width: 100%;
+        margin: 10px auto;
+        border: 1px solid lightgray;
+
+        .member-chart-box-title {
+            width: 100%;
+            height: 30px;
+            border-bottom: 1px solid lightgray;
+            padding: 2px 0 0 5px;
+            font-size: 16px;
+            font-weight: bold;
+            text-align: left;
+            color: white;
+            background-color: darkred;
+        }
+        .member-chart-box-caption {
+            width: 95%;
+            margin-left:30px;
+            font-size: 14px;
+            font-weight: normal;
+            color: black;
+        }
+
+        /** グラフ・レイヤー */
+        .member-chart-wrap-layer-1 {
+            width: 97%;
+            height: auto;
+            margin: 10px auto;
+            border: 1px solid lightgray;
+            clear: both;
+
+            .member-chart-wrap-title {
+                width: 100%;
+                height: 30px;
+                border-bottom: 1px solid lightgray;
+                padding: 5px;
+                background-color: #E6B8AF;
+                font-size: 14px;
+                font-weight: normal;
+                color: black;
+                text-align: left;
+            }
+            .member-chart-wrap-caption {
+                width: 95%;
+                margin-left:30px;
+                font-size: 14px;
+                font-weight: normal;
+                color: black;
+                text-align: left;
+            }
+
+            .member-chart-wrap-layer-2 {
+                width: 100%;
+                height: auto;
+                margin: 10px auto;
+                display: flex;
+
+                /** 予測グラフ */
+                .member-chart-forecast-wrapper {
+                    width: 85%;
+                    margin: 0 auto;
+                    display: flex;
+                    .member-chart-forecast {
+                        width: 100%;
+                        height: auto;
+                        margin: 0 auto;
+                        border: 1px solid lightgray;
+                        .member-chart-title {
+                            width: 100%;
+                            height: 30px;
+                            border-bottom: 1px solid lightgray;
+                            padding: 5px;
+                            background-color: #E6B8AF;
+                            font-size: 14px;
+                            font-weight: normal;
+                            text-align: center;
+                        }
+                        .member-chart-caption {
+                            width: 95%;
+                            margin-left:30px;
+                            font-size: 14px;
+                            font-weight: normal;
+                            color: black;
+                            text-align: left;
+                        }
+                        .member-chart-caption-top,
+                        .member-chart-caption-bottom {
+                            width: 95%;
+                            margin-left:30px;
+                            font-size: 12px;
+                            font-weight: normal;
+                            color: black;
+                            text-align: left;
+                        }
+                        .member-chart-image {
+                            width: 100%;
+                            min-width: 600px;
+                            height: auto;
+                            margin-top: 0px;
+                            .image-wrapper {
+                                width: 800px;
+                                margin: 0 auto;
+                                display: flex;
+                                img {
+                                    width: 800px;
+                                    height: auto;
+                                    display: block;
+                                    margin: 0 auto;
+                                }
+                            }
+                        }
+
+                    }
+                }
+
+                /** ヒストグラム */
+                .member-chart-histogram-wrapper {
+                    width: 900px;
+                    margin: 0 auto;
+                    display: flex;
+
+                    .member-chart-histogram {
+                        width: 420px;
+                        height: auto;
+                        margin: 10px 0 10px 0;
+                        border: 1px solid lightgray;
+                        .member-chart-title {
+                            width: 100%;
+                            height: 30px;
+                            border-bottom: 1px solid lightgray;
+                            padding: 5px;
+                            background-color: #E6B8AF;
+                            font-size: 14px;
+                            font-weight: normal;
+                            text-align: center;
+                        }
+                        .member-chart-caption {
+                        }
+                        .member-chart-image {
+                            width: 100%;
+                            height: auto;
+                            margin-top: 0px;
+                            img {
+                                width: 340px;
+                                height: auto;
+                                margin: 20px 0 20px 35px;
+                            }
+                        }
+                    }
+                }
+                .member-chart-mid1 {
+                    width: 50px;
+                    height: auto;
+                }
+
+                //統計情報グラフ
+                .member-chart-statistics-wrapper {
+                    width: 90%;
+                    margin: 0 auto;
+
+                    /** 統計グラフ */
+                    .member-chart-statistics {
+                        width: 100%;
+                        margin: 0 auto;
+                        margin-bottom: 10px;
+                        display: flex;
+
+                        .member-chart-stat-sheet:nth-child(1) {
+                            margin-left: 20px;
+                        }
+                        .member-chart-stat-sheet {
+                            width: 45%;
+                            height: auto;
+                            border: 1px solid lightgray;
+                            .member-chart-stat-sheet-title {
+                                width: 100%;
+                                height: 30px;
+                                border-bottom: 1px solid lightgray;
+                                padding: 5px;
+                                font-size: 14px;
+                                font-weight: normal;
+                                background-color: #E6B8AF;
+                                text-align: center;
+                            }
+                            .member-chart-stat-sheet-image {
+                                width: 98%;
+                                height: auto;
+                                margin: 10px auto;
+                                img {
+                                    width: 395px;
+                                    height: 300px;
+                                    display: block;
+                                    margin: 0 auto;
+                                }
+                            }
+                        }/** member-chart-stat-sheet */
+                    }/** member-chart-statistics */
+                }/** member-chart-statistics-wrapper */
+
+                /** 単語頻度グラフ */
+                .word-frequency-chart-wrapper {
+                    width: 700px;
+                    margin: 0 auto;
+                    display: flex;
+
+                    .word-frequency-chart {
+                        width: 318px;
+                        height: auto;
+                        margin: 10px 0;
+                        border: 1px solid lightgray;
+                        .member-chart-title {
+                            width: 100%;
+                            height: 30px;
+                            border-bottom: 1px solid lightgray;
+                            padding: 5px;
+                            background-color: #E6B8AF;
+                            font-size: 14px;
+                            font-weight: normal;
+                            text-align: center;
+                        }
+                        .member-chart-image {
+                            width: 100%;
+                            height: auto;
+                            img {
+                                width: 250px;
+                                height: auto;
+                                margin: 5px 0 5px 17px;
+                            }
+                        }
+                    }
+                    .member-chart-mid2 {
+                        width: auto;
+                        height: auto;
+                        padding: 130px 23px 0 30px;
+                        .mark-triangle-right {
+                            width: 0;
+                            height: 0;
+                            border-left: 30px solid darkred;
+                            border-top: 30px solid transparent;
+                            border-bottom: 30px solid transparent;
+                        }
+                    }
+                }/** word-frequency-chart-wrapper */
+
+
+                /** 文法使用頻度分析グラフ */
+                .grammar-usage-analysis-chart-wrapper {
+                    width: 95%;
+                    margin: 10px 0 10px 30px;
+                    border: 1px solid lightgray;
+
+                    .member-chart-title {
+                        width: 100%;
+                        height: 30px;
+                        border-bottom: 1px solid lightgray;
+                        padding: 5px;
+                        background-color: #E6B8AF;
+                        text-align: center;
+                        font-size: 14px;
+                        font-weight: normal;
+                        color: black;
+                    }
+
+                    .member-chart-inner-layer {
+                        display: flex;
+                        .member-chart-image {
+                            width: 40%;
+                            height: auto;
+                            img.member-chart-img05 {
+                                width: 290px;
+                                height: auto;
+                                margin: 10px 0 10px 20px;
+                            }
+                        }
+                        .member-chart-rate-table {
+                            width: 55%;
+                            height: auto;
+                            padding: 50px 0 0 50px;
+                            font-size: 12px;
+
+                            .grammar-rate-table-pdf {
+                                box-sizing: border-box;
+                                width: 100%;
+                                height: auto;
+                                margin: 10px 0;
+                                font-size: 12px;
+
+                                .grammar-rate-table-row-top {
+                                    box-sizing: border-box;
+                                    display: table;
+                                    width: 100%;
+                                    table-layout: fixed;
+                                }
+                                .grammar-rate-table-row {
+                                    box-sizing: border-box;
+                                    display: table;
+                                    width: 100%;
+                                    table-layout: fixed;
+                                    border-left: 1px solid lightgray;
+                                }
+                                .grammar-rate-table-row-last {
+                                    box-sizing: border-box;
+                                    display: table;
+                                    width: 100%;
+                                    table-layout: fixed;
+                                    border-left: 1px solid lightgray;
+                                    border-bottom: 1px solid lightgray;
+                                }
+                                .row-head-top {
+                                    box-sizing: border-box;
+                                    display: table-cell;
+                                    width: 25%;
+                                    font-weight: bold;
+                                    text-align: center;
+                                    background-color: white;
+                                    border-top: none;
+                                    border-left: none;
+                                    border-right: 1px solid lightgray;
+                                }
+                                .row-head {
+                                    box-sizing: border-box;
+                                    display: table-cell;
+                                    width: 25%;
+                                    font-weight: bold;
+                                    text-align: center;
+                                    background-color: silver;
+                                    border-top: 1px solid lightgray;
+                                    border-right: 1px solid lightgray;
+                                }
+                                .cell-head {
+                                    box-sizing: border-box;
+                                    display: table-cell;
+                                    width: 25%;
+                                    font-weight: bold;
+                                    text-align: left;
+                                    padding-left: 10px;
+                                    background-color: khaki;
+                                    border-top: 1px solid lightgray;
+                                    border-right: 1px solid lightgray;
+                                }
+                                .cell-data {
+                                    box-sizing: border-box;
+                                    display: table-cell;
+                                    width: 25%;
+                                    font-weight: normal;
+                                    text-align: right;
+                                    padding-right: 10px;
+                                    border-top: 1px solid lightgray;
+                                    border-right: 1px solid lightgray;
+                                }
+                            }/** .grammar-rate-table-pdf */
+
+                            .member-chart-rate-table-ps {
+                                margin-top: -8px;
+                                margin-left: 200px;
+                            }
+                        }/** .member-chart-rate-table */
+
+                    }/** member-chart-inner-layer */
+                }/** grammar-usage-analysis-chart-wrapper */
+
+            }/** member-chart-wrap-layer-2 */
+        }/** member-chart-wrap-layer-1 */
+
+    }/** member-chart-box-pdf */
+}/** member-report-box-pdf */
+
+.mark-triangle-right-deprecated {
+  width: 0;
+  height: 0;
+  border-left: 30px solid darkred;
+  border-top: 30px solid transparent;
+  border-bottom: 30px solid transparent;
+}
+/**
+ * @deprecated 2018-08-04
+ * ここまで
+ */
+
+
